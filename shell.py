@@ -1,19 +1,19 @@
 from os import system
 
-def inputShell():
-    shell = str(input('|-> '))
+def inputCommand():
+    shell = str(input('|->> '))
     if shell == 'exit' or shell == 'quit':
         exit()
 
     if shell == 'clear':
         system('clear')
 
-    backShell(shell)
+    runCommand(shell)
 
-def backShell(shell):
+def runCommand(shell):
     cmd = shell
     system(cmd)
 
 if __name__ == '__main__':
     while True:
-        inputShell()
+        inputCommand()
