@@ -1,7 +1,7 @@
 from os import system
 
 def inputCommand():
-    shell = str(input('|->> '))
+    shell = str(input('>>> '))
     if shell == 'exit' or shell == 'quit':
         exit()
 
